@@ -1,0 +1,59 @@
+// ======== Class Core ==========
+.text__light {
+  font-weight: 300;
+}
+
+.text__normal {
+  font-weight: 400;
+}
+
+.text__medium {
+  font-weight: 500;
+}
+
+.text__semibold {
+  font-weight: 600;
+}
+
+.text__bold {
+  font-weight: 700;
+}
+
+.text__extrabold {
+  font-weight: 800;
+}
+
+.text__uppercase {
+  text-transform: uppercase;
+}
+
+.text__lowercase {
+  text-transform: lowercase;
+}
+
+.text__capitalize {
+  text-transform: capitalize;
+}
+//==============================
+
+// Font family will init new project
+.font__geist-sans {
+  font-family: var(--font-geist-sans) ;
+}
+
+.font__geist-mono {
+  font-family: var(--font-geist-mono) ;
+}
+
+// Text color when init new project
+.text__black {
+  color: var(--black);
+}
+
+.text__white {
+  color: var(--white);
+}
+
+.text__blue {
+  color: var(--blue);
+}

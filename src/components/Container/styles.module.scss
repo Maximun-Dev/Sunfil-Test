@@ -1,0 +1,29 @@
+.container {
+  // max-width: 1660px;
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  --gap-x: #{rem(16px)};
+  width: 100%;
+  margin: 0 auto;
+  @include min-tablet {
+    padding-left: rem(32px);
+    padding-right: rem(32px);
+    --gap-x: #{rem(20px)};
+  }
+  @include pcSmall {
+    padding-left: rem(200px);
+    padding-right: rem(200px);
+  }
+
+  &_grid {
+    width: 100%;
+    column-gap: var(--gap-x);
+    @include min-tablet {
+      column-gap: var(--gap-x);
+    }
+
+    @include pcSmall {
+      column-gap: rem(32px);
+    }
+  }
+}

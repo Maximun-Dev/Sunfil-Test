@@ -1,0 +1,58 @@
+.text {
+  font-style: normal;
+  line-height: 120%;
+
+  &__200 {
+    @include pcSmall {
+      font-size: rem(200px);
+    }
+  }
+
+  &__64 {
+    @include pcSmall {
+      font-size: rem(64px);
+      line-height: 1;
+    }
+  }
+
+  &__28 {
+    @include pcSmall {
+      font-size: rem(28px);
+    }
+  }
+
+  &__20 {
+    @include pcSmall {
+      font-size: rem(20px);
+    }
+  }
+
+  &__24 {
+    @include pcSmall {
+      font-size: rem(24px);
+    }
+  }
+
+  &__18 {
+    font-size: rem(16px);
+
+    @include min-tablet {
+      font-size: rem(18px);
+    }
+  }
+
+  &__16 {
+    //font-size: rem(16px);
+
+    @include min-tablet {
+      font-size: rem(16px);
+    }
+  }
+  &__14 {
+    //font-size: rem(16px);
+    line-height: 142.857%;
+    @include min-tablet {
+      font-size: rem(14px);
+    }
+  }
+}
