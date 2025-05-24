@@ -98,10 +98,10 @@ html {
   box-sizing: border-box;
   background-color: var(--white);
   font-size: vw(10px, 390px);
-  @include min-tablet {
+  @include tablet {
     font-size: vw(10px, 991px);
   }
-  @include pcSmall {
+  @include laptop {
     font-size: vw(10px);
   }
 }

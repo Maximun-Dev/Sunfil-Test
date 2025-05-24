@@ -1,13 +1,15 @@
-import React from 'react';
-import PageTransition from '@Animation/PageTransition';
-import PageLoader from '@Animation/PageLoader';
+import React from "react";
+// import PageTransition from '@Animation/PageTransition';
+// import PageLoader from '@Animation/PageLoader';
 
-export default function Animation({ children }: React.PropsWithChildren): React.JSX.Element {
+export default function Animation({
+  children,
+}: React.PropsWithChildren): React.JSX.Element {
   return (
     <main>
-      <PageLoader />
+      {/* <PageLoader /> */}
       {children}
-      <PageTransition />
+      {/* <PageTransition /> */}
     </main>
   );
 }

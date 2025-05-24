@@ -1,11 +1,14 @@
-import type { NextConfig } from 'next';
-import withPWA from '@ducanh2912/next-pwa';
 import { PROD_ENV } from '@Constants/envs';
+import withPWA from '@ducanh2912/next-pwa';
+import type { NextConfig } from 'next';
 
 const isProd = process.env.NEXT_PUBLIC_APP_ENV === PROD_ENV;
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  experimental: {
+    scrollRestoration: true,
+  },
   sassOptions: {
     additionalData: `@use "@/styles/tool.scss" as *;`,
   },

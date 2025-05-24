@@ -38,38 +38,32 @@
   }
 }
 
-@mixin onlyMobile {
-  @media (max-width: 767px) {
+@mixin mobile {
+  @media (max-width: 768px) {
     @content;
   }
 }
 
-@mixin fromTablet {
-  @media (max-width: 1199px) {
+@mixin is-tablet() {
+  @media (max-width: 1200px) and (min-width: 768px) {
     @content;
   }
 }
 
-@mixin min-tablet {
-  @media (min-width: theme('screens.sm')) {
+@mixin tablet {
+  @media (min-width: 768px) {
     @content;
   }
 }
 
-@mixin min-tabletWide {
-  @media (min-width: theme('screens.md')) {
+@mixin laptop {
+  @media (min-width: 1200px) {
     @content;
   }
 }
 
-@mixin pcSmall {
-  @media (min-width: theme('screens.lg')) {
-    @content;
-  }
-}
-
-@mixin pcMid {
-  @media (min-width: theme('screens.xl')) {
+@mixin desktop {
+  @media (min-width: 1440px) {
     @content;
   }
 }
