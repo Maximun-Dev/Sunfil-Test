@@ -148,6 +148,7 @@ body {
   line-height: 110%;
   font-weight: normal;
   font-size: rem(16px);
+  font-family: var(--font-epilogue);
   background-color: var(--dark-grey);
   transition: background-color 0.4s var(--easeInOutQuart);
 }
